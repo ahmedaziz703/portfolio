@@ -45,7 +45,7 @@ function arabic() {
 <p>وانا مطور برمجيات</p>
 <div class="btn-box">
 <a href="#about" class="btn-1">عني</a>
-<a href="tel:+967775561590" class="btn-2" target="_blank">تواصل بي</a></div>`;
+<a href="tel:+967773637966" class="btn-2" target="_blank">تواصل بي</a></div>`;
     document.getElementById("about_title").innerHTML = `نبذه<span class="title2"> عني</span>`;
     document.getElementById("about_title_co").innerHTML = `اسمي أحمد، ودرست تخصص تكنولوجيا المعلومات. أنا عضو في مجتمع المطورين في جوجل، وأعمل كمستقل في مجال تطوير المواقع وأنظمة الويب . أستخدم لغات برمجة مختلفة لإنشاء حلول مبتكرة لعملائي.
     `;
