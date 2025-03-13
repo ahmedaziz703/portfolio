@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords"
+        content="portfolio, web designing, Designer ,mobile applications ,Osama zayed ,Osama-zayed ,Flutter ,Osama-zayed ,osama zayed ,OSAMA ZAYED , osama Zayed ,osama-zayed  css , JavaScript , bootStarp , ios Portfolio , website , page , animation-page , full-control-website,amazing-Portfolio" />
+    <meta name="author" content="osama zayed" />
+    <meta name="description" content="my name is Ahmed i am software Developers ">
+
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+
+    <title>Ahmed Alrages</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> <!-- bootstrap core css -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/responsive.css" rel="stylesheet" /> <!-- responsive style -->
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/style-ar.css" id="arabic" disabled>
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- COLORS -->
+    <link rel="alternate stylesheet" disabled href="css/color/blue.css" title="blue">
+    <link rel="alternate stylesheet" disabled href="css/color/green.css" title="green">
+    <link rel="alternate stylesheet" disabled href="css/color/orange.css" title="orange">
+    <link rel="alternate stylesheet" disabled href="css/color/purple.css" title="purple">
+    <link rel="alternate stylesheet" disabled href="css/color/slate.css" title="slate">
+    <link rel="alternate stylesheet" disabled href="css/color/yellow.css" title="yellow">
+    <link rel="alternate stylesheet" disabled href="css/color/red.css" title="red">
+    <link rel="alternate stylesheet" disabled href="css/color/blue-munsell.css" title="blue-munsell">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri:wght@400;500;600;700&family=Rakkas&display=swap"
+        rel="stylesheet">
+    <script src="js/scrollreveal.js"></script>
+</head>
+
+<body>
+    <div id="loader-page"
+        class="loader-page  show  position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center ">
+        <div class="loding" id="loding">
+            <div class="text-center ">
+                <p class="loader-letters" style="animation: var(--effect);">
+                    l</p>
+                <p class="loader-letters" style="animation: var(--effect) .125s;">
+                    o</p>
+                <p class="loader-letters" style="animation: var(--effect) .25s;">
+                    a</p>
+                <p class="loader-letters" style="animation: var(--effect) .375s;">
+                    d</p>
+                <p class="loader-letters" style="animation: var(--effect) .5s;">
+                    i</p>
+                <p class="loader-letters" style="animation: var(--effect) .675s;">
+                    n</p>
+                <p class="loader-letters" style="animation: var(--effect) .75s;">
+                    g</p>
+            </div>
+            <div class="loader text-center " style="animation: rotate 1s infinite; height: 50px; width: 50px;"></div>
+        </div>
+    </div>
+    <script>
+        const loding = document.getElementById('loader-page');
+        setTimeout(function () {
+            loding.classList.toggle('hidden');
+        }, 2500); 
+    </script>
+
+    </div>
+    <nav>
+        <div class="container">
+            <div class="lg_nav" id="lg_nav">
+                <h3><a href="index.html">Ahmed Alrages</a></h3>
+                <ul id="horizontalMenu" style="padding:0;margin:0; ">
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#home">Home</a></li>
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#about">about </a></li>
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#skills">skills </a></li>
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#services">services </a></li>
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#portfolio"> portfolio </a></li>
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#contact_sec">Contact</a></li>
+                    <!-- <div class="">  <li class="navMenuLink btn-box"><a class="navMenuLinkContent btn-2" href="#contact">Arabic</a></li></div> -->
+                </ul>
+
+            </div>
+            <input id="menuToggle" type="checkbox" style="display:none;">
+            <label id="menuButton" for="menuToggle">
+                <div id="menuButtonIcon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </label>
+
+            <ul id="verticalMenu">
+                <div class="mb-4 d-flex justify-content-around p-2 w-fit-content">
+                    <h3><a href="index.html">Ahmed</a></h3>
+                    <input id="menuToggle" type="checkbox" style="display:none;">
+                    <label id="menuButton" for="menuToggle">
+                        <div id="menuButtonIcon">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </label>
+                </div>
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#home">Home</a></li>
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#about">about </a></li>
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#skills">skills </a></li>
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#services">services </a></li>
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#portfolio"> portfolio </a></li>
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#contact_sec">Contact</a></li>
+                <li class="navMenuLink mt-5">
+                    <p>Mobile:
+                        <a href="tel:+967773637966" target="_blank">
+                            (+967-773-637-966)
+                        </a>
+                    </p>
+                </li>
+                <li class="navMenuLink">
+                    <p>Email
+                        <a href="mailto:ahmedzizz703@gmail.com" target="_blank">
+                            ahmedzizz703@gmail.com
+                        </a>
+                    </p>
+                </li>
+
+            </ul>
+
+    </nav>
+    <!-- slider section -->
+    <div class="hero_area " id="home">
+        <section class="slider_section  ">
+            <div class="play_btn scroll-to-section ">
+                <a href="#services">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6  fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <div class="detail-box" id="home_text">
+                                        <h1>
+                                            Hi, my name is <br>
+                                            <span>
+                                                Ahmed Alrages
+                                            </span>
+                                        </h1>
+                                        <p>
+                                            I'm a Software Developers
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="#about" class="btn-1">
+                                                About Me
+                                            </a>
+                                            <a href="tel:+967773637966" class="btn-2" target="_blank">
+                                                Contact me
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 img-container   fadeInRight " data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <div class="img-box" >
+                                        <img src="images/Osama.webp" alt="osama zayed">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider section -->
+    </div>
+
+
+    <!-- about section -->
+    <section class="about punchline " id="about">
+        <div class="container about__container--narrow">
+            <div class="page-section">
+                <h2 class=" title_line fadeInTop " id="about_title">ABOUT <span class="title2"> ME</span></h2>
+                <p class="page-section__paragraph fadeInLeft" id="about_title_co">My name is Ahmed, and I have studied
+                    Information Technology. I am a core tame of the developer community at Google, and I work as a
+                    freelancer in the field of web development and systems. I use various programming languages to
+                    create innovative solutions for my clients.</p>
+                <div class="row gutters-80">
+                    <div class="col-md-4">
+                        <div class="about__image fadeInLeft">
+                            <img src="images/Osama.webp" alt="/slider ABOUT"
+                                style="background-color:var(--main-color)">
+                        </div>
+                    </div>
+                    <div class="col-md-8 about__content ">
+                        <p class="about__description fadeInRight" id="about__content">I
+                            I have explored different areas in the field of technology, such as mobile application
+                            development, front-end development, and the importance of user experience and attractive
+                            interface design. I have also studied fundamental concepts in cybersecurity. This knowledge
+                            has helped me understand more about software communication and methods for developing
+                            high-quality programs .
+                            It was easy for me to study these areas because I already had a strong programming
+                            foundation. I solved many programming problems before specializing in any specific field.
+                            However, my main focus remains on back-end development because I feel that I have excelled
+                            in this aspect, and I enjoy working with databases. I have over a year of experience in this
+                            field and have developed several projects during this time.
+                            My goals are to excel in the software industry and continually expand my
+                            skills and knowledge.
+                        </p>
+                        <div class="row row--margin-top fadeInTop" id="about_my_self">
+                            <div class="col-md-6 col-lg-5">
+                                <p class="about__bio"><strong>NAME :</strong> Osama Zayed</p>
+                                <p class="about__bio"><strong>AGE :</strong> 22</p>
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <p class="about__bio"><strong>JOB : </strong>Software Developers</p>
+                                <p class="about__bio"><strong>ADDRESS:</strong> Sana'a , yemen</p>
+                            </div>
+                        </div>
+                        <div class="detail-box ">
+                            <div class="btn-box fadeInBottom ">
+                                <a href="images/ahmed-aziz-CV.pdf" class="btn-1 " target="_blank" i>
+                                    <p id="about_btn1">Download CV</p>
+                                    <br>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                                            width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2"
+                                                d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="tel:+967773637966" class="btn-2 " target="_blank">
+                                    <p id="about_btn2"> Contact me</p>
+                                    <br>
+                                    <span class="icon">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- skills section -->
+    <div class="my-skills text-center" id="skills">
+        <div class="container ">
+            <h2 class="fw-bold title_line" id="my_skills"><span class="title2"> My</span> Skills</h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 w-100  m-auto" id="image_stud">
+
+                </div>
+                <div class="skills col-md-12 col-lg-6">
+
+                    <div class="skill">
+                        <h5>HTML <span>90%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 90%"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>CSS <span>85%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 85%"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>JavaScript <span>75%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 75%"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>PHP <span>90%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 90%"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Sql<span>90%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 90%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5>Java<span>95%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 95%"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5>Python <span>80%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                    <div class="skill  mb-5">
+                        <h5>Flutter<span>75%</span></h5>
+                        <div class="the-progress">
+                            <span style="width: 75%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end skills section -->
+
+    <!-- services section -->
+    <div class="services text-center " id="services">
+        <div class="container ">
+            <h2 class="fw-bold  title_line" id="my_services"><span class="title2"> My</span> Services</h2>
+            <p class="text-black-50 mb-5 mt-1 fadeInLeft " id="my_services_content">
+                I provide technology services that help you establish an online presence, and I focus on SEO to make
+                websites appear on the first pages of search engines, which helps increase the number of visits.
+            </p>
+            <div class="row">
+
+                <div class="col-md-12 col-lg-4 height-5 fadeInLeft">
+                    <div class="box bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="60" viewBox="0 0 32 32"
+                            class="svg mb-3" src="/fonts/svg/managedserver.svg" alt="Systems Development">
+                            <title>managedserver</title>
+                            <path id="svg-ico" fill=" var(--main-color)"
+                                d="M25.681 18.363c-0.894 0-1.619 0.725-1.619 1.613 0 0.894 0.725 1.619 1.619 1.619s1.619-0.725 1.619-1.619c0-0.887-0.725-1.613-1.619-1.613zM25.681 20.788c-0.444 0-0.806-0.363-0.806-0.813 0-0.444 0.363-0.806 0.806-0.806s0.806 0.363 0.806 0.806c0 0.45-0.363 0.813-0.806 0.813z">
+                            </path>
+                            <path id="svg-ico" fill=" var(--main-color)"
+                                d="M29.469 15.319h-9.688c-0.106-0.363-0.313-0.688-0.6-0.944-0.106-0.1-0.144-0.25-0.087-0.387 0.050-0.113 0.181-0.206 0.281-0.213l0.181 0.006c1.056 0 1.944-0.794 2.069-1.85 0.094-0.781 0.094-1.575 0.006-2.362-0.131-1.162-1.2-1.856-2.156-1.856-0.15 0-0.288-0.081-0.337-0.206-0.056-0.131-0.019-0.294 0.087-0.388 0.806-0.737 0.906-1.981 0.231-2.831-0.488-0.619-1.044-1.181-1.65-1.663-0.831-0.663-2.144-0.563-2.863 0.231-0.037 0.044-0.156 0.1-0.287 0.1-0.050 0-0.081-0.006-0.094-0.013-0.131-0.056-0.219-0.194-0.213-0.337 0.069-1.106-0.744-2.075-1.844-2.2-0.769-0.088-1.569-0.094-2.338-0.006-1.081 0.119-1.894 1.063-1.863 2.15 0.006 0.15-0.081 0.288-0.206 0.337-0.019 0.006-0.050 0.013-0.088 0.013-0.131 0-0.256-0.063-0.3-0.106-0.7-0.775-1.981-0.894-2.837-0.237-0.625 0.487-1.188 1.050-1.681 1.663-0.694 0.862-0.594 2.112 0.225 2.856 0.106 0.1 0.144 0.256 0.094 0.388-0.050 0.125-0.237 0.206-0.456 0.213-1.075 0-1.95 0.775-2.075 1.844-0.094 0.775-0.094 1.569-0.006 2.369 0.138 1.206 1.244 1.856 2.212 1.856 0.112 0 0.231 0.094 0.281 0.219 0.056 0.131 0.013 0.281-0.094 0.387-0.8 0.738-0.9 1.981-0.225 2.825 0.481 0.613 1.038 1.175 1.644 1.669 0.369 0.3 0.838 0.462 1.306 0.462 0.206 0 0.419-0.031 0.612-0.094v3.919c0 0.844 0.744 1.531 1.65 1.531h21.094c0.906 0 1.65-0.688 1.65-1.531v-6.287c0.012-0.844-0.731-1.525-1.637-1.525zM5.3 18.2c-0.563-0.45-1.075-0.969-1.519-1.538-0.413-0.519-0.35-1.281 0.138-1.731 0.356-0.331 0.475-0.85 0.294-1.287-0.175-0.431-0.594-0.719-1.031-0.719-0.619 0-1.325-0.4-1.406-1.137-0.081-0.731-0.081-1.469 0.006-2.181 0.081-0.656 0.619-1.131 1.275-1.131 0.556 0 1.019-0.269 1.206-0.706 0.188-0.45 0.069-0.969-0.294-1.294-0.5-0.456-0.563-1.225-0.138-1.756 0.45-0.563 0.975-1.081 1.544-1.531 0.531-0.406 1.313-0.331 1.744 0.144 0.287 0.319 0.887 0.462 1.294 0.294 0.444-0.181 0.725-0.631 0.713-1.112-0.025-0.669 0.481-1.244 1.144-1.319 0.713-0.081 1.45-0.075 2.156 0.006 0.675 0.081 1.175 0.669 1.131 1.35-0.025 0.487 0.256 0.938 0.706 1.125 0.15 0.063 0.3 0.075 0.406 0.075 0.35 0 0.688-0.144 0.894-0.369 0.437-0.481 1.244-0.55 1.756-0.144 0.556 0.444 1.069 0.963 1.519 1.537 0.413 0.525 0.35 1.287-0.144 1.737-0.356 0.325-0.475 0.844-0.294 1.294 0.181 0.431 0.606 0.706 1.087 0.706 0.6 0 1.275 0.425 1.356 1.137 0.081 0.725 0.081 1.463-0.006 2.181-0.075 0.644-0.619 1.131-1.262 1.131l-0.175-0.006c-0.438 0.006-0.869 0.294-1.038 0.706-0.188 0.45-0.075 0.975 0.288 1.3 0.113 0.1 0.2 0.219 0.269 0.344h-10.55c-0.912 0-1.65 0.688-1.65 1.531v1.475c-0.444 0.244-1.025 0.2-1.419-0.113zM30.306 23.119c0 0.4-0.375 0.719-0.844 0.719h-21.094c-0.463 0-0.844-0.325-0.844-0.719v-6.275c0-0.4 0.381-0.719 0.844-0.719v0h21.094c0.462 0 0.844 0.325 0.844 0.719v6.275z">
+                            </path>
+                            <path id="svg-ico" fill=" var(--main-color)"
+                                d="M11.3 14.344c1.675 0 3.037-1.363 3.037-3.037s-1.363-3.037-3.037-3.037c-1.675 0-3.037 1.363-3.037 3.037s1.369 3.037 3.037 3.037zM11.3 9.075c1.231 0 2.225 1 2.225 2.231s-1 2.231-2.225 2.231c-1.231 0-2.225-1-2.225-2.231s1-2.231 2.225-2.231z">
+                            </path>
+                            <path id="svg-ico" fill=" var(--main-color)"
+                                d="M27.106 29.606h-6.412c-0.144-0.569-0.594-1.012-1.163-1.163v-2.069c0-0.225-0.181-0.406-0.406-0.406s-0.406 0.181-0.406 0.406v2.069c-0.569 0.144-1.012 0.594-1.163 1.163h-6.4c-0.225 0-0.406 0.181-0.406 0.406s0.181 0.406 0.406 0.406h6.406c0.181 0.694 0.813 1.212 1.563 1.212s1.387-0.519 1.563-1.212h6.413c0.225 0 0.406-0.181 0.406-0.406s-0.175-0.406-0.4-0.406zM19.131 30.819c-0.444 0-0.806-0.363-0.806-0.806s0.363-0.806 0.806-0.806c0.444 0 0.806 0.363 0.806 0.806 0 0 0 0 0 0s0 0 0 0c0 0.444-0.363 0.806-0.806 0.806z">
+                            </path>
+                            <path fill="#5e686c"
+                                d="M6.156 19.244c-0.469 0-0.938-0.163-1.306-0.456-0.606-0.488-1.163-1.050-1.644-1.663-0.669-0.844-0.569-2.081 0.225-2.819 0.106-0.1 0.15-0.256 0.094-0.381-0.050-0.125-0.175-0.213-0.281-0.213-0.969 0-2.069-0.65-2.206-1.85-0.088-0.794-0.088-1.588 0.006-2.356 0.131-1.063 1-1.838 2.069-1.838 0.219 0 0.406-0.081 0.456-0.206 0.056-0.131 0.019-0.287-0.087-0.381-0.819-0.744-0.913-1.994-0.225-2.85 0.494-0.625 1.056-1.181 1.681-1.669 0.856-0.656 2.125-0.538 2.825 0.237 0.037 0.044 0.162 0.106 0.3 0.106 0.044 0 0.075-0.006 0.088-0.013 0.131-0.050 0.213-0.188 0.206-0.337-0.037-1.081 0.781-2.025 1.856-2.144 0.769-0.088 1.563-0.081 2.331 0.006 1.1 0.131 1.906 1.094 1.838 2.194-0.006 0.144 0.081 0.281 0.213 0.337 0.006 0 0.037 0.013 0.088 0.013 0.131 0 0.25-0.056 0.287-0.1 0.719-0.794 2.025-0.894 2.85-0.231 0.606 0.487 1.156 1.044 1.644 1.663 0.675 0.85 0.575 2.088-0.231 2.825-0.106 0.1-0.144 0.256-0.087 0.388 0.050 0.125 0.181 0.206 0.337 0.206 0.956 0 2.019 0.694 2.15 1.85 0.087 0.781 0.087 1.575-0.006 2.356-0.125 1.050-1.006 1.844-2.063 1.844l-0.181-0.006c-0.1 0-0.238 0.094-0.281 0.213-0.056 0.131-0.019 0.287 0.087 0.387 0.375 0.338 0.613 0.8 0.669 1.3 0.025 0.219-0.131 0.419-0.35 0.45-0.219 0.025-0.419-0.131-0.45-0.35-0.038-0.306-0.181-0.588-0.413-0.794-0.363-0.325-0.481-0.844-0.288-1.294 0.169-0.406 0.6-0.7 1.038-0.7l0.175 0.006c0.644 0 1.188-0.488 1.262-1.131 0.081-0.719 0.087-1.45 0.006-2.175-0.081-0.706-0.75-1.131-1.35-1.131-0.481 0-0.906-0.275-1.081-0.706-0.181-0.444-0.063-0.963 0.294-1.288 0.494-0.45 0.556-1.213 0.144-1.731-0.45-0.569-0.956-1.087-1.512-1.531-0.506-0.406-1.313-0.337-1.75 0.144-0.2 0.225-0.537 0.362-0.887 0.362-0.1 0-0.256-0.013-0.406-0.075-0.444-0.188-0.725-0.638-0.7-1.125 0.044-0.675-0.456-1.269-1.125-1.35-0.706-0.081-1.438-0.081-2.15-0.006-0.662 0.075-1.162 0.65-1.137 1.313 0.019 0.481-0.269 0.931-0.706 1.112-0.406 0.169-1 0.025-1.287-0.294-0.425-0.475-1.206-0.544-1.737-0.144-0.569 0.45-1.087 0.963-1.538 1.525-0.425 0.525-0.362 1.294 0.137 1.75 0.362 0.325 0.481 0.844 0.294 1.294-0.181 0.431-0.644 0.7-1.2 0.7-0.656 0-1.194 0.475-1.269 1.131-0.087 0.706-0.087 1.438-0.006 2.175s0.787 1.131 1.406 1.131c0.438 0 0.856 0.287 1.031 0.713 0.181 0.438 0.063 0.956-0.294 1.281-0.487 0.45-0.55 1.206-0.144 1.725 0.444 0.569 0.95 1.081 1.513 1.531 0.444 0.356 1.125 0.363 1.575 0.019 0.175-0.137 0.431-0.1 0.563 0.075 0.138 0.175 0.1 0.431-0.075 0.563-0.381 0.262-0.825 0.413-1.281 0.413z">
+                            </path>
+                            <path fill="#5e686c"
+                                d="M11.338 14.313c-1.669 0-3.025-1.356-3.025-3.025s1.356-3.025 3.025-3.025 3.025 1.356 3.025 3.025-1.356 3.025-3.025 3.025zM11.338 9.063c-1.225 0-2.219 0.994-2.219 2.219s0.994 2.219 2.219 2.219 2.219-0.994 2.219-2.219c0-1.219-0.994-2.219-2.219-2.219z">
+                            </path>
+                            <path fill="#5e686c"
+                                d="M19.144 31.538c-0.887 0-1.613-0.725-1.613-1.613s0.725-1.613 1.613-1.613c0.887 0 1.613 0.725 1.613 1.613-0.006 0.887-0.725 1.613-1.613 1.613zM19.144 29.119c-0.444 0-0.806 0.363-0.806 0.806s0.363 0.806 0.806 0.806c0.444 0 0.806-0.363 0.806-0.806s-0.363-0.806-0.806-0.806z">
+                            </path>
+                            <path fill="#5e686c"
+                                d="M19.144 29.119c-0.225 0-0.4-0.181-0.4-0.4v-2.419c0-0.225 0.181-0.4 0.4-0.4s0.4 0.181 0.4 0.4v2.419c0 0.225-0.181 0.4-0.4 0.4z">
+                            </path>
+                            <path fill="#5e686c"
+                                d="M17.931 30.331h-6.738c-0.225 0-0.4-0.181-0.4-0.4 0-0.225 0.181-0.4 0.4-0.4h6.744c0.225 0 0.4 0.181 0.4 0.4s-0.181 0.4-0.406 0.4z">
+                            </path>
+                            <path fill="#5e686c"
+                                d="M27.094 30.331h-6.744c-0.225 0-0.4-0.181-0.4-0.4 0-0.225 0.181-0.4 0.4-0.4h6.744c0.225 0 0.4 0.181 0.4 0.4s-0.181 0.4-0.4 0.4z">
+                            </path>
+                            <path id="svg-ico" fill=" var(--main-color)"
+                                d="M25.669 21.544c-0.887 0-1.613-0.725-1.613-1.613s0.725-1.613 1.613-1.613c0.887 0 1.613 0.725 1.613 1.613s-0.725 1.613-1.613 1.613zM25.669 19.131c-0.444 0-0.806 0.363-0.806 0.806s0.363 0.806 0.806 0.806c0.444 0 0.806-0.363 0.806-0.806 0-0.45-0.363-0.806-0.806-0.806z">
+                            </path>
+                            <path id="svg-ico" fill=" var(--main-color)"
+                                d="M29.444 24.581h-21.025c-0.906 0-1.644-0.681-1.644-1.525v-6.25c0-0.838 0.737-1.525 1.644-1.525h21.025c0.906 0 1.644 0.681 1.644 1.525v6.25c0 0.844-0.738 1.525-1.644 1.525zM8.419 16.087c-0.463 0-0.838 0.319-0.838 0.719v6.25c0 0.394 0.375 0.719 0.838 0.719h21.025c0.462 0 0.837-0.319 0.837-0.719v-6.25c0-0.394-0.375-0.719-0.837-0.719h-21.025z">
+                            </path>
+                        </svg>
+                        <h4 class="p-5 " id="service_system">Systems </h4>
+                        <blockquote class="text-black-50 p-1" id="service_system_content">
+                            Analyzing customer requirements and designing a system that meets their needs.
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4 fadeInLeft">
+                    <div class="box bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="60" viewBox="0 0 32 32"
+                            class="svg mb-3" src="/fonts/svg/technology.svg" alt="Mobile Application">
+                            <title>technology</title>
+                            <path fill=" var(--main-color)"
+                                d="M15.569 31.731h-13.831c-0.775 0-1.413-0.631-1.413-1.413v-28.637c0-0.781 0.631-1.413 1.413-1.413h20.744c0.781 0 1.413 0.631 1.413 1.413v4.938c0 0.231-0.188 0.425-0.425 0.425-0.231 0-0.425-0.188-0.425-0.425v-4.938c0-0.313-0.256-0.563-0.563-0.563h-20.744c-0.313 0-0.563 0.256-0.563 0.563v28.644c0 0.313 0.256 0.563 0.563 0.563h13.825c0.231 0 0.425 0.188 0.425 0.425 0 0.231-0.188 0.419-0.419 0.419z">
+                            </path>
+                            <path id="svg-ico" fill="#5e686b"
+                                d="M30.381 31.731h-10.863c-0.781 0-1.413-0.631-1.413-1.413v-19.75c0-0.781 0.631-1.412 1.413-1.412h10.863c0.775 0 1.413 0.631 1.413 1.412v19.756c0 0.775-0.637 1.406-1.413 1.406zM19.519 10.006c-0.313 0-0.563 0.256-0.563 0.563v19.756c0 0.313 0.256 0.563 0.563 0.563h10.863c0.313 0 0.563-0.256 0.563-0.563v-19.756c0-0.313-0.25-0.563-0.563-0.563h-10.863z">
+                            </path>
+                            <path fill=" var(--main-color)"
+                                d="M12.106 29.544c-0.931 0-1.694-0.756-1.694-1.694 0-0.931 0.756-1.694 1.694-1.694s1.694 0.756 1.694 1.694c0 0.938-0.756 1.694-1.694 1.694zM12.106 27.006c-0.469 0-0.844 0.381-0.844 0.844 0 0.469 0.381 0.844 0.844 0.844s0.844-0.381 0.844-0.844c0.006-0.462-0.375-0.844-0.844-0.844z">
+                            </path>
+                            <path id="svg-ico" fill="#5e686b"
+                                d="M24.95 29.544c-0.931 0-1.694-0.756-1.694-1.694 0-0.931 0.756-1.694 1.694-1.694s1.694 0.756 1.694 1.694c0 0.938-0.762 1.694-1.694 1.694zM24.95 27.006c-0.469 0-0.844 0.381-0.844 0.844 0 0.469 0.381 0.844 0.844 0.844s0.844-0.381 0.844-0.844c0-0.462-0.375-0.844-0.844-0.844z">
+                            </path>
+                        </svg>
+                        <h4 class="p-5" id="service_Mobile">Mobile Application</h4>
+                        <blockquote class="text-black-50 p-1" id="service_Mobile_content">
+                            Secure and scalable RESTful API, along with a powerful application dashboard for managing your applications.
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 fadeInLeft">
+                    <div class="box bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="60" viewBox="0 0 32 32"
+                            class="svg mb-3" src="/fonts/svg/browser.svg" alt="Web Development">
+                            <title>browser</title>
+                            <path fill="#5e686c "
+                                d="M31.419 3.587h-30.688c-0.237 0-0.425 0.188-0.425 0.425v24.55c0 0.238 0.188 0.425 0.425 0.425h30.688c0.238 0 0.425-0.188 0.425-0.425v-24.55c0-0.237-0.188-0.425-0.425-0.425zM30.994 4.438v6.475h-29.837v-6.475h29.837zM1.156 28.137v-16.369h29.837v16.369h-29.837z">
+                            </path>
+                            <path id="svg-ico" fill="var(--main-color)"
+                                d="M5.056 9.381c0.938 0 1.706-0.762 1.706-1.7s-0.763-1.706-1.706-1.706c-0.938 0-1.7 0.763-1.7 1.706 0 0.937 0.763 1.7 1.7 1.7zM5.056 6.825c0.469 0 0.85 0.381 0.85 0.856 0 0.469-0.381 0.85-0.85 0.85s-0.85-0.381-0.85-0.85c0-0.469 0.381-0.856 0.85-0.856z">
+                            </path>
+                            <path id="svg-ico" fill="var(--main-color)"
+                                d="M9.55 9.381c0.938 0 1.7-0.762 1.7-1.7s-0.762-1.706-1.7-1.706c-0.938 0-1.706 0.763-1.706 1.706 0.006 0.937 0.769 1.7 1.706 1.7zM9.55 6.825c0.469 0 0.85 0.381 0.85 0.856 0 0.469-0.381 0.85-0.85 0.85s-0.85-0.381-0.85-0.85c0-0.469 0.381-0.856 0.85-0.856z">
+                            </path>
+                            <path id="svg-ico" fill="var(--main-color)"
+                                d="M14.044 9.381c0.938 0 1.706-0.762 1.706-1.7s-0.762-1.706-1.706-1.706c-0.938 0-1.7 0.763-1.7 1.706 0 0.937 0.762 1.7 1.7 1.7zM14.044 6.825c0.469 0 0.85 0.381 0.85 0.856 0 0.469-0.381 0.85-0.85 0.85s-0.85-0.381-0.85-0.85c0-0.469 0.381-0.856 0.85-0.856z">
+                            </path>
+                        </svg>
+                        <h4 class="p-5 " id="service_Web">Web Development</h4>
+                        <blockquote class="text-black-50 p-1" id="service_Web_content">
+                            Websites and Web Applications that are responsive, elegant, and compatible.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end services section -->
+    <!-- start portfolio section -->
+
+    <section class="portfolio text-center mb-5" id="portfolio">
+        <div class="container">
+            <div class="page-section">
+                <h2 class="page-section__title title_line" id="my_portfolio"><span class="title2">My</span> portfolio
+                </h2>
+                <p class="text-black-50 mb-5 fadeInLeft" id="my_portfolio_content">
+                    These are some of the projects that have been previously completed and more projects will be added
+                    in the future.
+                </p>
+
+                <div class="gallery">
+
+                    <div class="row aos-init aos-animate" data-aos="zoom-in">
+                        <div class="gallery-filter">
+                            <span id="button_portfolio_all" class="filter-item active" data-filter="all">All</span>
+                            <span id="button_portfolio_system" class="filter-item" data-filter="system">Systems</span>
+                            <span id="button_portfolio_web" class="filter-item" data-filter="website">Websites</span>
+                            <span id="button_portfolio_mobile" class="filter-item" data-filter="mobile">Mobile
+                                Applications</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- gallery item start -->
+                        <div class="gallery-item website aos-init aos-animate" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-1.webp" class="rounded" alt="website" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-2.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website system aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-3.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website system aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-4.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website system mobile  aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-5.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website mobile aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-6.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-7.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-8.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website system aos-init" data-aos="zoom-in">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-9.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website system aos-init" data-aos="zoom-in" loading="lazy">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-10.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item website mobile aos-init" data-aos="zoom-in"  loading="lazy">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-11.webp" alt="website" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                        <!-- gallery item start -->
+                        <div class="gallery-item system aos-init" data-aos="zoom-in"  loading="lazy">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-12.webp" alt="system" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="gallery-item system aos-init" data-aos="zoom-in"  loading="lazy">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-13.webp" alt="system" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="gallery-item system aos-init" data-aos="zoom-in"  loading="lazy">
+                            <div class="gallery-item-inner">
+                                <img src="images/portfolio-14.webp" alt="system" class="rounded" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end portfolio section -->
+
+    <!-- start cotact section -->
+    <div class="contact-us section text-center" id="contact_sec">
+        <div class="container">
+            <h2 class="fw-bold  title_line mt-0" id="contact_me"> contact<span class="title2"> Me</span></h2>
+            <p class="page-section__paragraph fadeInBottom " id="contact_me_content">Fill Out The Contact Form To
+                Contact me
+                I Will Help You Choose What Suits Your Specific Needs!
+            </p>
+            <div class="row ">
+                <div class="col-md-12 col-lg-5 w-100  fadeInLeft m-auto" id="image_contact">
+                </div>
+                <div class="col-lg-7  fadeInUp" id="contact_form">
+                    <form method="POST" action="https://formsubmit.co/osama0zayed@gmail.com" class="fadeInRight row"
+                        id="contact">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <div class="input-group col-lg-12">
+                            <input type="text" name="name" class="col-lg-12 input" id="contact_name"
+                                required>
+                            <label class="user-label ">Name</label>
+                        </div>
+                        <div class="input-group col-lg-6">
+                            <input type="email" name="email" class=" input" id="contact_email"
+                                required>
+                            <label class="user-label">Your Email</label>
+                        </div>
+                        <div class="input-group col-lg-6">
+                            <input type="text" name="phone_number" placeholder="" id="contact_number" class=" input"
+                             id="contact_email" required>
+                            <label class="user-label">Phone number</label>
+                        </div>
+                        <textarea name="message" class="form-control col-lg-6" placeholder="Message"
+                            id="contact_message" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://osama-zayed.github.io/portfolio/contect.html">
+
+                        <button type="submit" class="main-button col-lg-12 col-md-12 justify-content-center">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span id="contact_send">Send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end cotact section -->
+
+    <!-- info section -->
+    <footer class="info_section layout_padding-top layout_padding2-bottom  " id="info_section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 col-lg-4  fadeInLeft" id="info_contact_menu">
+                    <div class="info_links pl-lg-5">
+                        <h4>
+                            Menu
+                        </h4>
+                        <ul>
+                            <li class="">
+                                <a href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="#skills">Skills</a>
+                            </li>
+                            <li>
+                                <a class="" href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a class="" href="#portfolio">Portfolio </a>
+                            </li>
+                            <li class="active">
+                                <a href="#contact_sec">
+                                    Contact My
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 fadeInBottom ">
+                    <div class="info_contact">
+                        <h4 id="info_contact_Address">
+                            Address
+                        </h4>
+                        <div>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>
+                                <a href="https://maps.app.goo.gl/4cJLxuiG8S27gLaf8" target="_blank" id="Address_loc">
+                                    Sana,a Yemen
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>
+                                <a href="tel:+967773637966" target="_blank">
+                                    (+967-773-637-966)
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>
+                                <a href="mailto:ahmedzizz703@gmail.com" target="_blank">
+                                    ahmedzizz703@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="info_social">
+                        <h4 class=" fadeInLeft" id="Social_Link">
+                            Social Link
+                        </h4>
+                        <div class="social_container">
+                            <div>
+                                <a href="https://www.facebook.com/share/1FkZ3JBMum/?mibextid=qi2Omg
+                                " target="_blank">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/a7m_z7?igsh=MW53eThoYzBxdTM1aA==" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://t.me/aziz77_5?fbclid=PAY2xjawJAG1lleHRuA2FlbQIxMQABptVe7m-eD2xMVWmrhvB4Dmu9_4QatMMj-gTVadYCDUEv_L4Xe9qjwerreA_aem_5smW_t7YGjLQGw08E7gISg" target="_blank">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://wa.me/qr/ZSILM7ZAR2J4J1" target="_blank">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <footer class="container-fluid footer_section">
+        <p id="Created_by">
+            &copy; Created by <a href="index.html">Ahmed Alrages</a>
+        </p>
+    </footer>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript" src="js/countdown.js"></script><!-- Countdown -->
+
+    <div class="demo-style-switch" id="switch-style">
+        <a id="toggle-switcher" class="switch-button"><i class="fa fa-cog fa-spin fa-fw"></i></a>
+        <div class="switched-options ">
+            <ul class="styles">
+                <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+                        <div class="blue">
+                        </div>
+                    </a></li>
+
+                <li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
+                        <div class="purple">
+                        </div>
+                    </a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
+                        <div class="blue-munsell">
+                        </div>
+                    </a></li>
+
+                <li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
+                        <div class="orange">
+                        </div>
+                    </a></li>
+
+                <li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
+                        <div class="slate">
+                        </div>
+                    </a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
+                        <div class="green">
+                        </div>
+                    </a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
+                        <div class="yellow">
+                        </div>
+                    </a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+                        <div class="red">
+                        </div>
+                    </a></li>
+            </ul>
+            <div id="Language">
+                <button class="mod" onclick="mod(1)">
+                    <i class="fa fa-globe" aria-hidden="true"></i>عربي
+                </button>
+            </div>
+        </div>
+
+
+        <script src="js/mixitup.js"></script>
+
+        <script>
+            const x = 1000;
+            const sr = ScrollReveal();
+            sr.reveal('nav,.hero_area', {
+                origin: 'top',
+                distance: '100px',
+                delay: '3000',
+                duration: x,
+                scale: 0.5,
+            });
+            sr.reveal(' .fadeInTop', {
+                origin: 'top',
+                distance: '100px',
+                delay: '500',
+                //reset: true,
+                duration: x,
+                scale: 0.5,
+            });
+            sr.reveal('.title_line,.fadeInBottom ', {
+                origin: 'bottom',
+                distance: '200px',
+                duration: x,
+                //reset: true,
+                delay: '500',
+                scale: 0.5,
+            });
+            sr.reveal('.fadeInLeft ,.demo-style-switch ,.my-skills #image_stud ,carousel-item', {
+                origin: 'left',
+                distance: '200px',
+                duration: x,
+                delay: '500',
+                //reset: true,
+                scale: 0.5,
+            });
+            sr.reveal('.skills .skill ,.my-skills .row .thumbnail ', {
+                origin: 'bottom',
+                distance: '200px',
+                duration: x,
+                delay: '100',
+                //reset: true,
+                scale: 0.5,
+                interval: 100
+            });
+            sr.reveal('.services .row .col-md-6 ,.info_section li , .filter-item', {
+                origin: 'bottom',
+                distance: '200px',
+                duration: x,
+                delay: '100',
+                //reset: true,
+                scale: 0.5,
+                interval: 100
+            });
+            sr.reveal('.gallery .gallery-item-inner img ,.info_contact ,.info_social .social_container div', {
+                origin: 'left',
+                distance: '200px',
+                duration: x,
+                delay: '100',
+                //reset: true,
+                scale: 0.5,
+                interval: 100
+            });
+            sr.reveal('.fadeInRight ,.play_btn  ', {
+                origin: 'right',
+                distance: '200px',
+                delay: '500',
+                duration: x,
+                scale: 0.5,
+                //reset: true
+            });
+
+        </script>
+
+        <script src="js/ar.js"></script>
+        <script type="text/javascript" src="js/student.js"> </script>
+</body>
+
+</html>
