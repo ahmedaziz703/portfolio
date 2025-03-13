@@ -169,7 +169,7 @@ function arabic() {
 }
 function english() {
     document.getElementById("lg_nav").innerHTML = `
-    <h3><a href="index.html">Osama Zayed</a></h3>
+    <h3><a href="index.html">Ahmed Alrages</a></h3>
                 <ul id="horizontalMenu" style="padding:0;margin:0; ">
                     <li class="navMenuLink"><a class="navMenuLinkContent" href="#home">Home</a></li>
                     <li class="navMenuLink"><a class="navMenuLinkContent" href="#about">about </a></li>
@@ -179,7 +179,7 @@ function english() {
                     <li class="navMenuLink"><a class="navMenuLinkContent" href="#contact_sec">Contact</a></li>   `;
     document.getElementById("verticalMenu").innerHTML = `
     <div class="mb-4 d-flex justify-content-around p-2 w-fit-content">
-    <h3><a href="index.html">Osama</a></h3>
+    <h3><a href="index.html">Ahmed</a></h3>
     <input id="menuToggle" type="checkbox" style="display:none;">
     <label id="menuButton" for="menuToggle">
         <div id="menuButtonIcon">
