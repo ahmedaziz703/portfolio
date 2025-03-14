@@ -104,7 +104,7 @@ function arabic() {
     <textarea name="message" class="form-control col-lg-6" placeholder="الرسالة"
         id="contact_message" required></textarea>
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://osama-zayed.github.io/portfolio/contect.html">
+    <input type="hidden" name="_next" value="https://ahmedaziz703.github.io/portfolio/contect.html">
 
     <button type="submit" class="main-button col-lg-12 col-md-12 justify-content-center">
         <div class="svg-wrapper-1">
@@ -288,7 +288,7 @@ function english() {
     <textarea name="message" class="form-control col-lg-6" placeholder="Message"
         id="contact_message" required></textarea>
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://osama-zayed.github.io/portfolio/contect.html">
+    <input type="hidden" name="_next" value="https://ahmedaziz703.github.io/portfolio/contect.html">
 
     <button type="submit" class="main-button col-lg-12 col-md-12 justify-content-center">
         <div class="svg-wrapper-1">
